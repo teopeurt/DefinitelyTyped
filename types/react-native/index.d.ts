@@ -3736,7 +3736,7 @@ export interface SectionListData<ItemT> extends SectionBase<ItemT> {
     [key: string]: any;
 }
 
-export interface SectionListProperties<ItemT> extends ScrollViewProperties {
+export interface SectionListProperties<ItemT> extends VirtualizedListProperties<ItemT> {
     /**
      * Rendered in between adjacent Items within each section.
      */
